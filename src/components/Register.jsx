@@ -27,7 +27,7 @@ const Register = () => {
         }
 
         try {
-            const response = await axios.post(`"${backendURL}/users`, user);
+            const response = await axios.post(`${backendURL}/users`, user);
             console.log(response.data);
             setSuccessMessage("Registration Succesful!");
             setFailureMessage("");
